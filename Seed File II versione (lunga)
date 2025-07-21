@@ -10,10 +10,9 @@ dict <- dictionary(list(
   key = c(
     "public_investment(s)", "public_spending", "public_action(s)", "public_sector(s)", "stabilis*", "public_risk-sharing", "public_risk_sharing", "policy_mix", "fiscal_stance",
     "fiscal_space", "capacity", "unemployment", "employment", "safe_asset(s)", "stimulus", "fiscal_spending", "counter-cyclical",
-    "countercyclical", "complement*","align*", "multipli*", "aggregate", "multipli*", "support*", "fiscal_union", "political_union",
+    "countercyclical", "complement*","align*", "aggregate", "multipli*", "support*", "fiscal_union", "political_union",
     "public_good(s)", "public_interest(s)", "public_support", "social", "common", "collective", "shar*", "together*", "unit*", "joint",
-    "own_resources", "eu_budget", "institution", "centralis*", "protect*", "distribut*", "redistribut*", "inequalit*", "commmunity"
-  )
+    "own_resources", "eu_budget", "institution", "centralis*", "protect*", "distribut*", "redistribut*", "inequalit*", "community")
 )
 )
 
