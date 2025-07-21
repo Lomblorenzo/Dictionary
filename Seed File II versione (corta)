@@ -1,1 +1,14 @@
-
+dict <- dictionary(list(
+  ordo = c(
+    "public_debt(s)", "government_debt(s)", "deficit(s)", "structural_reform(s)", "public_finances", "long-term", "long_term",
+    "sustainab*", "consolid*", "stabilit*", "discipline", "credibility", "oversight",  "sound*",  "confidence", "private_investment(s)",
+    "private_sector(s)", "private_actors", "private_risk_sharing", "private_risk-sharing", "risk-reduction", "risk_reduction", "market-driven", "market_driven",
+    "balanced", "prudent", "monitor", "safeguard", "business-friendly", "automatic_stabiliser(s)", "accountabilit*", "prohibit*", "moral_hazard", "conditionalit*"),
+  
+  key = c(
+    "public_investment(s)", "public_spending", "public_action(s)", "public_sector(s)", "stabilis*", "public_risk-sharing", "public_risk_sharing", "policy_mix", "fiscal_stance",
+    "fiscal_space", "capacity", "unemployment", "employment", "safe_asset(s)", "stimul*", "fiscal_spending", "counter-cyclical",
+    "countercyclical", "complement*","align*", "aggregate", "multipli*", "public_good(s)", "public_interest(s)", "common", "collective", "shar*", "together*", "joint",
+    "own_resources", "eu_budget", "protect*", "distribut*", "redistribut*")
+)
+)
