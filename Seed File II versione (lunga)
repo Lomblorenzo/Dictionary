@@ -1,0 +1,81 @@
+dict <- dictionary(list(
+  ordo = c(
+    "public_debt(s)", "government_debt(s)", "deficit(s)", "structural_reform(s)", "public_finances", "long-term", "long_term",
+    "sustainab*", "consolid*", "stabilit*", "discipline", "credibility", "oversight",  "sound*",  "confidence", "private_investment(s)",
+    "private_sector(s)", "private_actors", "private_risk_sharing", "private_risk-sharing", "risk-reduction", "risk_reduction", "market-driven", "market_driven",
+    "balanced", "prudent", "monitor", "safeguard", "business-friendly", "automatic_stabiliser(s)", "neutrality",
+    "autonom*", "accountabilit*", "national_responsibilit*", "fiscal_sovereignt*", "fiscal_authorit*", "fiscal_responsibilit*", "prohibit*", "trust*",
+    "converge*", "rule(s)", "rule-based", "rule_based", "peer(s)", "moral_hazard", "taxpayer(s)", "conditionalit*"),
+  
+  key = c(
+    "public_investment(s)", "public_spending", "public_action(s)", "public_sector(s)", "stabilis*", "public_risk-sharing", "public_risk_sharing", "policy_mix", "fiscal_stance",
+    "fiscal_space", "capacity", "unemployment", "employment", "safe_asset(s)", "stimulus", "fiscal_spending", "counter-cyclical",
+    "countercyclical", "complement*","align*", "multipli*", "aggregate", "multipli*", "support*", "fiscal_union", "political_union",
+    "public_good(s)", "public_interest(s)", "public_support", "social", "common", "collective", "shar*", "together*", "unit*", "joint",
+    "own_resources", "eu_budget", "institution", "centralis*", "protect*", "distribut*", "redistribut*", "inequalit*", "commmunity"
+  )
+)
+)
+
+
+
+#compounding
+toks_comp <- tokens_compound(toks, list(c("long", "term")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks, list(c("public", "debt")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks, list(c("public", "debts")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks, list(c("government", "debt")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks, list(c("government", "debts")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks, list(c("public", "finances")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("automatic", "stabiliser")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("automatic", "stabilisers")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("structural", "reform")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("structural", "reforms")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("market", "driven")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","sector")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","sectors")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","actors")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","investment")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","investments")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","risk-sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("private","risk", "sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("risk","reduction")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("rule","based")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("moral", "hazard")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("national", "responsibility")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("national", "responsibilities")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "sovereignty")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "sovereignties")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "authority")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "authorities")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "responsibility")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "responsibilities")), valuetype = "fixed")
+
+toks_comp <- tokens_compound(toks_comp, list(c("public", "investment")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "investments")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "spending")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "action")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "actions")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "sector")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "sectors")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "risk-sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "risk","sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "risk-sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "risk","sharing")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "stance")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "spending")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "space")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("policy", "mix")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("safe", "asset")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("safe", "assets")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "good")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "goods")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "interest")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "interests")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("public", "support")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("political", "union")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("fiscal", "union")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("own", "resources")), valuetype = "fixed")
+toks_comp <- tokens_compound(toks_comp, list(c("eu", "budget")), valuetype = "fixed")
+
+
+
